@@ -2,7 +2,7 @@
 
 int ft_player_input(int winner)
 {
-	int n;
+	int input;
 	char str[4];
 
 	if (winner % 2 != 0)
@@ -11,8 +11,8 @@ int ft_player_input(int winner)
 		{
 			printf("PLAYER 1 >> ");
 			fgets(str, sizeof(str), stdin);
-			sscanf(str, "%d", &n);
-			if (1 <= n  && n <= 6)
+			sscanf(str, "%d", &input);
+			if (1 <= input  && input <= 6)
 				break;
 			printf("Wrong input. Please enter a number. (1 ~ 6)\n");
 			while (str[1] != '\n' && str[2] != '\n')
@@ -25,33 +25,33 @@ int ft_player_input(int winner)
 		{
 			printf("PLAYER 2 >> ");
 			fgets(str, sizeof(str), stdin);
-			sscanf(str, "%d", &n);
-			if (1 <= n  && n <= 6)
+			sscanf(str, "%d", &input);
+			if (1 <= input  && input <= 6)
 				break;
 			printf("Wrong input. Please enter a number. (1 ~ 6)\n");
 			while (str[1] != '\n' && str[2] != '\n')
 				fgets(str, sizeof(str), stdin);
 		}
 	}
-	return (n);
+	return (input);
 }
 
-int ft_update_map(char map[10][9], int winner, int n)
+int ft_update_map(char map[10][9], int winner, int input)
 {
 	int i;
 	
 	for (i = 7; i > 0; i--)
 	{
-		if (map[i][n] == '|')
+		if (map[i][input] == '|')
 		{
 			if (winner % 2 != 0)
 			{
-				map[i][n] = 'o';
+				map[i][input] = 'o';
 				return (CONTINUE);
 			}
 			else
 			{
-				map[i][n] = 'x';
+				map[i][input] = 'x';
 				return (CONTINUE);
 			}
 		}
@@ -103,7 +103,7 @@ int	main(void)
 {
 	int	status;
 	int	winner;
-	int	n;
+	int	input;
 	char	map[10][9];
 
 	status = 0;
@@ -112,8 +112,8 @@ int	main(void)
 	while (1)
 	{
 		winner++;
-		n = ft_player_input(winner);
-		status = ft_validation(map, winner, n);
+		input = ft_player_input(winner);
+		status = ft_validation(map, winner, input);
 		if (status == TIE)
 		{
 			printf("The game was a tie.\n");

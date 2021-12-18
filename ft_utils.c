@@ -1,16 +1,14 @@
 #include "ft_connect4.h"
 
-/*int ft_isspace(char map[10][9], int winner)
+int ft_isspace(char map[10][9])
 {
-	(void)winner;
 	for (int j = 1; j < 7; j++)
 	{
-		if (map[1][j] == ' ')
+		if (map[1][j] == '|')
 			return (NOTFULL);
 	}
 	return (FULL);
 }
-*/
 
 size_t	ft_strlen(const char *s)
 {
@@ -53,14 +51,8 @@ char	*ft_strnstr(char *haystack, const char *needle, size_t len)
 	while (haystack[i] != '\0' && i + nlen <= len)
 	{
 		if (ft_strncmp(&haystack[i], needle, nlen) == 0)
-		{
-//			for (int j = 0; j < 4; j++)
-//				haystack[i + j] -= 32;
 			return ((char *)&haystack[i]);
-		}
 		i++;
 	}
 	return (NULL);
 }
-
-

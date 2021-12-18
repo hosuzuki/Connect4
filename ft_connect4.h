@@ -17,6 +17,6 @@ int ft_validation(char map[10][9], int winner, int c);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(char *haystack, const char *needle, size_t len);
 int ft_update_map(char map[10][9], int winner, int c);
-int ft_isspace(char map[10][9], int winner);
+int ft_isspace(char map[10][9]);
 
 #endif
