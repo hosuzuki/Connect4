@@ -12,7 +12,7 @@
 # define NOTFULL 3
 # define NOTVALID 4
 
-int ft_player_input(char map[10][9], int winner);
+int ft_player_input(int winner);
 int ft_validation(char map[10][9], int winner, int c);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(char *haystack, const char *needle, size_t len);

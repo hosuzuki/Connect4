@@ -3,13 +3,10 @@
 /*int ft_isspace(char map[10][9], int winner)
 {
 	(void)winner;
-	for (int i = 1; i < 8; i++)
+	for (int j = 1; j < 7; j++)
 	{
-		for (int j = 1; j < 7; j++)
-		{
-			if (map[i][j] == ' ')
-				return (NOTFULL);
-		}
+		if (map[1][j] == ' ')
+			return (NOTFULL);
 	}
 	return (FULL);
 }

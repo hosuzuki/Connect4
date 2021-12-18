@@ -1,21 +1,75 @@
 #include "ft_connect4.h"
 
-int ft_update_map(char map[10][9], int winner, int c)
+int ft_player_input(int winner)
+{
+	int n;
+	char str[4];
+
+	//	str[1] = '\0';
+	if (winner % 2 != 0)
+	{
+		while (1)
+		{
+			printf("PLAYER 1 >> ");
+			fgets(str, sizeof(str), stdin);
+			sscanf(str, "%d", &n);
+			if (1 <= n  && n <= 6)
+				break;
+			printf("Wrong input. Please enter a number. (1 ~ 6)\n");
+			while (str[1] != '\n' && str[2] != '\n' && str[3] != '\n')
+				fgets(str, sizeof(str), stdin);
+				//			if (str[1] != '\0')
+//			if ('1' <= str[0] && str[0] <= '6')
+//			{
+//				sscanf(str, "%d", &n);
+//		 		break;
+//			}
+//			else
+//				printf("Wrong input. Please enter a number. (1 ~ 6)\n");
+			//			scanf("%d", &n);
+		}
+	}
+	else
+	{
+		while (1)
+		{
+			printf("PLAYER 2 >> ");
+			fgets(str, sizeof(str), stdin);
+			sscanf(str, "%d", &n);
+			if (1 <= n  && n <= 6)
+				break;
+			printf("Wrong input. Please enter a number. (1 ~ 6)\n");
+			while (str[1] != '\n' && str[2] != '\n' && str[3] != '\n')
+				fgets(str, sizeof(str), stdin);
+			//			scanf("%d", &n);
+		//	fgets(str, sizeof(str), stdin);
+			//sscanf(str, "%d", &n);
+	//			scanf("%d", &n);
+		//	if (1 <= n  && n <= 6)	
+			//	break;
+		//	else
+			//	printf("Wrong input. Please enter a number. (1 ~ 6)\n");
+		}
+	}
+	return (n);
+}
+
+int ft_update_map(char map[10][9], int winner, int n)
 {
 	int i;
 	
 	for (i = 7; i > 0; i--)
 	{
-		if (map[i][c] == ' ')
+		if (map[i][n] == '|')
 		{
 			if (winner % 2 != 0)
 			{
-				map[i][c] = 'o';
+				map[i][n] = 'o';
 				return (CONTINUE);
 			}
 			else
 			{
-				map[i][c] = 'x';
+				map[i][n] = 'x';
 				return (CONTINUE);
 			}
 		}
@@ -29,7 +83,7 @@ void ft_print_map(char map[10][9])
 	{
 	//	for(int j = 0; i < 9; j++)
 		printf("%s\n", map[i]);
-	//	printf("%c", '\n');
+	//	printf("%n", '\n');
 	}
 }
 
@@ -55,7 +109,7 @@ void ft_generate_map(char map[10][9])
 	for (i = 1; i < 8; i++)
 	{
 		for (j = 1; j < 7; j++)
-			map[i][j] = ' ';
+			map[i][j] = '|';
 	}
 	for (j = 1; j < 7; j++)
 		map[9][j] = j + '0';
@@ -76,7 +130,7 @@ int	main(void)
 {
 	int	status;
 	int	winner;
-	int	c;
+	int	n;
 	char	map[10][9];
 
 	status = 0;
@@ -85,9 +139,9 @@ int	main(void)
 	while (1)
 	{
 		winner++;
-		c = ft_player_input(map, winner);
+		n = ft_player_input(winner);
 //		status = ft_validation();
-		status = ft_validation(map, winner, c);
+		status = ft_validation(map, winner, n);
 		if (status == TIE)
 		{
 			printf("The game was a tie.\n");

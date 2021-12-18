@@ -1,15 +1,15 @@
 SHELL = /bin/sh
 NAME = connect4
-SRC = main.c \
+SRC = ft_connect4.c \
 	ft_validation.c \
 	ft_utils.c 
 OBJ = $(SRC:.c=.o)
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra
+#CFLAGS = -Wall -Werror -Wextra
 RM = rm -f
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME) -g
 
 .c.o :
 	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
