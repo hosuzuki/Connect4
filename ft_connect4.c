@@ -5,7 +5,6 @@ int ft_player_input(int winner)
 	int n;
 	char str[4];
 
-	//	str[1] = '\0';
 	if (winner % 2 != 0)
 	{
 		while (1)
@@ -16,17 +15,8 @@ int ft_player_input(int winner)
 			if (1 <= n  && n <= 6)
 				break;
 			printf("Wrong input. Please enter a number. (1 ~ 6)\n");
-			while (str[1] != '\n' && str[2] != '\n' && str[3] != '\n')
+			while (str[1] != '\n' && str[2] != '\n')
 				fgets(str, sizeof(str), stdin);
-				//			if (str[1] != '\0')
-//			if ('1' <= str[0] && str[0] <= '6')
-//			{
-//				sscanf(str, "%d", &n);
-//		 		break;
-//			}
-//			else
-//				printf("Wrong input. Please enter a number. (1 ~ 6)\n");
-			//			scanf("%d", &n);
 		}
 	}
 	else
@@ -39,16 +29,8 @@ int ft_player_input(int winner)
 			if (1 <= n  && n <= 6)
 				break;
 			printf("Wrong input. Please enter a number. (1 ~ 6)\n");
-			while (str[1] != '\n' && str[2] != '\n' && str[3] != '\n')
+			while (str[1] != '\n' && str[2] != '\n')
 				fgets(str, sizeof(str), stdin);
-			//			scanf("%d", &n);
-		//	fgets(str, sizeof(str), stdin);
-			//sscanf(str, "%d", &n);
-	//			scanf("%d", &n);
-		//	if (1 <= n  && n <= 6)	
-			//	break;
-		//	else
-			//	printf("Wrong input. Please enter a number. (1 ~ 6)\n");
 		}
 	}
 	return (n);
@@ -80,11 +62,7 @@ int ft_update_map(char map[10][9], int winner, int n)
 void ft_print_map(char map[10][9])
 {
 	for (int i = 0; i < 10; i++)
-	{
-	//	for(int j = 0; i < 9; j++)
 		printf("%s\n", map[i]);
-	//	printf("%n", '\n');
-	}
 }
 
 void ft_generate_map(char map[10][9])
@@ -121,11 +99,6 @@ void ft_generate_map(char map[10][9])
 	printf("Enter a number. (1 ~ 6)\n");
 }
 
-/*int ft_validation(void)
-{
-	return (SETTLEMENT);
-}
-*/
 int	main(void)
 {
 	int	status;
@@ -140,7 +113,6 @@ int	main(void)
 	{
 		winner++;
 		n = ft_player_input(winner);
-//		status = ft_validation();
 		status = ft_validation(map, winner, n);
 		if (status == TIE)
 		{
@@ -163,10 +135,6 @@ int	main(void)
 		}
 		if (status == CONTINUE)
 			ft_print_map(map);
-		//return (ft_print_winner())
-//		else if (status == TIE)
-//			return (ft_print_tie());
-//		map = ft_generate_map();
 	}
 	return (0);
 }
