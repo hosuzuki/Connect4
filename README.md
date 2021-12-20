@@ -1,5 +1,5 @@
 <p align="center"> 
-![scrshot2021-12-20 11 40 16](https://user-images.githubusercontent.com/81731043/146711971-8d5d6d25-7539-4de9-b0fb-b06471cd183d.png)
+![scrshot2021-12-20 11 40 16](https://user-images.githubusercontent.com/81731043/146712261-14dac32f-9c22-482b-a04b-9005df1c42db.png)
 </p>
 <h1 align="center"> Connect4 </h1>
 <h4 align="center"> Project Assignment - 42 Tokyo (2021 WINTER) </h4>
