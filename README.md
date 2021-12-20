@@ -10,9 +10,9 @@
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> ⭐  Getting Started</h2>
 
-In order to install 'Connect4', git clone the this repository wherever you like.
+In order to install 'Connect4', clone this repository wherever you like.
 ```
-git clone 
+git clone git@github.com:hosuzuki/connect4.git
 ```
 Then, go into the repository which you just cloned. 
 ```
@@ -39,7 +39,7 @@ Player 1 starts first.
 
 Player 1 can type any number between 1 to 6 to place your piece which is 'o' on the game board.
 
-For instance, if the Player one type '1' and hit `enter` key, the board will be updated such as below.
+For instance, if the Player 1 type `1` and hit `enter` key, the board will be updated such as below.
 
 ![aab2021-12-20 13 40 41](https://user-images.githubusercontent.com/81731043/146713145-084d3144-cbf8-4467-b888-d9523761db0b.png)
 
