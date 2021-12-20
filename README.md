@@ -1,7 +1,7 @@
 <p align="center"> 
   
-![scrshot2021-12-20 11 40 16](https://user-images.githubusercontent.com/81731043/146712261-14dac32f-9c22-482b-a04b-9005df1c42db.png)
-<img src="https://user-images.githubusercontent.com/81731043/146712261-14dac32f-9c22-482b-a04b-9005df1c42db.png" width="100">
+![aac2021-12-20 13 39 47](https://user-images.githubusercontent.com/81731043/146713003-c356736f-e076-4ae1-96de-76c880185c4b.png)
+
 </p>
 
 <h1 align="center"> Connect4 </h1>
@@ -35,11 +35,15 @@ To play the game, type
 ```
 ./connect4
 ```
+![aaa2021-12-20 13 41 00](https://user-images.githubusercontent.com/81731043/146713095-baa3a50a-0712-4d75-ac93-862c88bd85bd.png)
 
 Player 1 starts first.
+
 Player 1 can type any number between 1 to 6 to place your piece which is 'o' on the game board.
 
 For instance, if the Player one type '1' and hit `enter` key, the board will be updated such as below.
+
+![aab2021-12-20 13 40 41](https://user-images.githubusercontent.com/81731043/146713145-084d3144-cbf8-4467-b888-d9523761db0b.png)
 
 Now, Player 2's turn. 
 
