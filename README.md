@@ -1,5 +1,7 @@
-![aac2021-12-20 13 39 47](https://user-images.githubusercontent.com/81731043/146713003-c356736f-e076-4ae1-96de-76c880185c4b.png)
- 
+<p align="center"> 
+ ![aac](https://user-images.githubusercontent.com/81731043/146717457-f52c6240-35a0-41e9-894f-f9816a7f1eee.png)
+</p>
+
 <h1 align="center"> Connect4 </h1>
 <h4 align="center"> Project Assignment - 42 Tokyo (2021 WINTER) </h4>
 
