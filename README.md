@@ -1,5 +1,5 @@
 <div align="center">
-  ![aac2021-12-20 13 39 47](https://user-images.githubusercontent.com/81731043/146713003-c356736f-e076-4ae1-96de-76c880185c4b.png)
+  ![aac2021-12-20 13 39 47](https://user-images.githubusercontent.com/81731043/146713003-c356736f-e076-4ae1-96de-76c880185c4b.png#center)
 </div>
 
 <h1 align="center"> Connect4 </h1>
