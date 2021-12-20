@@ -5,8 +5,8 @@
 <h1 align="center"> Connect4 </h1>
 <h4 align="center"> Project Assignment - 42 Tokyo (2021 WINTER) </h4>
 
-A simple Connect Four(Four-in-a-row) game. 
-The one who lines up his or her 4 pieces wins.
+<h6 align="center"> A simple Connect Four(Four-in-a-row) game. </h6>
+<h6 align="center">The one who lines up his or her 4 pieces wins.</h6>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
