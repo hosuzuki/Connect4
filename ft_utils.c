@@ -4,7 +4,7 @@ int ft_isspace(char map[10][9])
 {
 	for (int j = 1; j < 7; j++)
 	{
-		if (map[1][j] == '|')
+		if (map[1][j] == ' ')
 			return (NOTFULL);
 	}
 	return (FULL);

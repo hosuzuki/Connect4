@@ -42,7 +42,7 @@ int ft_update_map(char map[10][9], int winner, int input)
 	
 	for (i = 7; i > 0; i--)
 	{
-		if (map[i][input] == '|')
+		if (map[i][input] == ' ')
 		{
 			if (winner % 2 != 0)
 			{
@@ -87,7 +87,7 @@ void ft_generate_map(char map[10][9])
 	for (i = 1; i < 8; i++)
 	{
 		for (j = 1; j < 7; j++)
-			map[i][j] = '|';
+			map[i][j] = ' ';
 	}
 	for (j = 1; j < 7; j++)
 		map[9][j] = j + '0';

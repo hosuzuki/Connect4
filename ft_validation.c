@@ -20,7 +20,7 @@ int ft_validate_horizontal(char map[10][9], char *four, int input)
 	int j;
 
 	i = 1;
-	while (map[i][input] == '|' && i < 8)
+	while (map[i][input] == ' ' && i < 8)
 		i++;
 	for (j = 1; j < 7; j++)
 		str[j - 1] = map[i][j];
@@ -38,7 +38,7 @@ int ft_validate_upperright(char map[10][9], char *four, int input)
 	int index;
 
 	i = 1;
-	while (map[i][input] == '|' && i < 8)
+	while (map[i][input] == ' ' && i < 8)
 		i++;
 	j = 0;
 	while (1 < i - j && input + j < 6)
@@ -65,7 +65,7 @@ int ft_validate_lowerright(char map[10][9], char *four, int input)
 	int	index;
 
 	i = 1;
-	while (map[i][input] == '|' && i < 8)
+	while (map[i][input] == ' ' && i < 8)
 		i++;
 	j = 0;
 	while (1 < i + j && 1 < input + j)

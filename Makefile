@@ -9,7 +9,7 @@ CFLAGS = -Wall -Werror -Wextra
 RM = rm -f
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME) -g
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 .c.o :
 	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
