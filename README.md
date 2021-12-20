@@ -1,15 +1,14 @@
 <p align="center"> 
-![aac2021-12-20 13 39 47](https://user-images.githubusercontent.com/81731043/146713003-c356736f-e076-4ae1-96de-76c880185c4b.png)
+  ![aac2021-12-20 13 39 47](https://user-images.githubusercontent.com/81731043/146713003-c356736f-e076-4ae1-96de-76c880185c4b.png)
 </p>
 
 <h1 align="center"> Connect4 </h1>
 <h4 align="center"> Project Assignment - 42 Tokyo (2021 WINTER) </h4>
 
-<h6 align="center"> A simple Connect Four(Four-in-a-row) game. </h6>
-<h6 align="center">The one who lines up his or her 4 pieces wins.</h6>
+<h6 align="center"> A simple Connect Four(Four-in-a-row) game. <br>
+The one who lines up his or her 4 pieces wins.</h6>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
 
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> ⭐  Getting Started</h2>
